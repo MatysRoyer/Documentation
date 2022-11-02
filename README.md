@@ -3,9 +3,9 @@
 
 
 ## Prérequis
- * [Visual Studio]https://visualstudio.microsoft.com/fr/vs/
+ * [Visual Studio](https://visualstudio.microsoft.com/fr/vs/)
 
- * [Vsxmd]]https://www.nuget.org/packages/Vsxmd
+ * [Vsxmd](https://www.nuget.org/packages/Vsxmd)
 
  ## Library
  * [class voiture](Documentation/Voiture.cs)
