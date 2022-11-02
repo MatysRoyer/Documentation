@@ -22,9 +22,19 @@ namespace Documentation
 
         public string Couleur { get => couleur; set => couleur = value; }
 
+        /// <summary>
+        /// L'évenément est déclencher lorsque la couleur du véhicule change
+        /// </summary>
         public event EventHandler<string> couleurChanged;
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="couleur"></param>
+        /// <param name="marque"></param>
+        /// <param name="annee"></param>
+        /// <param name="kilometrage"></param>
+        /// <param name="nombrePorte"></param>
         public Voiture(string couleur, string marque, int annee, decimal kilometrage, int nombrePorte)
         {
             
@@ -41,7 +51,7 @@ namespace Documentation
         /// Puis, elle prend la peinture initiale et la change  pour  la peinture choisie.
         /// L'évènement couleurChanged met à jour automatiquement la couleur choisie comme la nouvelle couleur de la voiture.
         /// </summary>
-        /// <param name="couleurFinale"></param>
+        /// <param name="couleurFinale">La couleur finale du véhicule</param>
 
 
         private void Peinture(string couleurFinale) 
@@ -58,7 +68,7 @@ namespace Documentation
         /// La porte ChangementVoiture, est utilisée pour pouvoir déterminer si un véhicule doit être changer.
         /// Si, le kilomètrage de la voiture est supérieur à 9999999 la méthode retourne un message important sinon le véhicule est encore bon.
         /// </summary>
-        /// <returns> </returns>
+        /// <returns>si le véhicule a 9999999 kilo il devrait être changer  sinon il pourra être garder</returns>
         private string ChangementVoiture(decimal kilo) 
         {
             kilo = this.kilometrage;
