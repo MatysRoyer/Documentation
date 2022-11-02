@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Documentation</name>
+    </assembly>
+    <members>
+        <member name="T:Documentation.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:Documentation.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:Documentation.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="T:Documentation.Voiture">
+            <summary>
+            La classe voiture permet de modifier la couleur du véhicule choisi.
+            Ensuite, la classe permet de déterminer si la véhicule doit être changer ou conservé.
+            </summary>
+        </member>
+        <member name="M:Documentation.Voiture.Peinture(System.String)">
+            <summary>
+            La méthode Peinture(), est utilisé pour changer la peinture originale de la voiture.
+            Puis, elle prend la peinture initiale et la change  pour  la peinture choisie.
+            L'évènement couleurChanged met à jour automatiquement la couleur choisie comme la nouvelle couleur de la voiture.
+            </summary>
+            <param name="couleurFinale"></param>
+        </member>
+        <member name="M:Documentation.Voiture.ChangementVoiture(System.Decimal)">
+            <summary>
+            La porte ChangementVoiture, est utilisée pour pouvoir déterminer si un véhicule doit être changer.
+            Si, le kilomètrage de la voiture est supérieur à 9999999 la méthode retourne un message important sinon le véhicule est encore bon.
+            </summary>
+            <returns> </returns>
+        </member>
+    </members>
+</doc>
